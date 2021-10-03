@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 .5rem;
 
     h1{
         strong{
@@ -25,7 +25,7 @@
         }
     }
 
-    button{
+    .btnNav{
         border: 0;
         cursor: pointer;
         border-radius: 1rem;
@@ -36,11 +36,28 @@
         font-weight: 700;
     }
 
-    button,li{
+    .btnNav,li{
         transition: 0.2s;
 
         &:hover{
             opacity: 0.85;
         }
     }
+
+    .btnMobile{
+        display: none;
+    }
+
+    @media only screen and (max-width: 660px) {
+        .btnMobile{
+            display: block;
+        }
+        .menuOff{
+            display: none;
+        }
+        .menuOn{
+            display: flex;
+        }
+    }
 }
+
