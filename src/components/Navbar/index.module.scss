@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+    height: 5rem;
+    background-color: #0e0e0e4d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    h1{
+        strong{
+            color: #2196f3;
+        }
+    }
+
+    ul{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+
+        li{
+            cursor: pointer;
+        }
+    }
+
+    button{
+        border: 0;
+        cursor: pointer;
+        border-radius: 1rem;
+        width: 6rem;
+        height: 2rem;
+        background-color: #2196f3;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    button,li{
+        transition: 0.2s;
+
+        &:hover{
+            opacity: 0.85;
+        }
+    }
+}
