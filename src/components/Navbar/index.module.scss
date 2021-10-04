@@ -1,4 +1,15 @@
-.container, .containerMobileOff{
+@media only screen and (max-width: 660px) {
+    .container{
+        .btnMobile{
+            display: block;
+        }
+        .menuOff,.menuOn{
+            display: none;
+        }
+    }
+}
+
+.container{
     width: 100%;
     height: 5rem;
     align-items: center;
@@ -11,6 +22,10 @@
         justify-content: space-around;
         align-items: center;
     }
+}
+
+.btnMobile{
+    display: none;
 }
 
 .container, .containerMobileOn,.containerMobileOff{
@@ -46,33 +61,33 @@
             opacity: 0.85;
         }
     }
-
-    .btnMobile{
-        display: none;
-    }
 }
 
-.containerMobileOff{
-    .btnMobile{
-        display: block;
-    }
-    .menuOff,.menuOn{
-        display: none;
-    }
+.btnMobileActive{
+    position: absolute;
+    right: 1rem;
+    top: 1.7rem;
 }
+
+.btnMobile,.btnMobileActive{
+    background-color: #bdbdbd00;
+    border: 0;
+}
+
 .containerMobileOn{
     position:absolute;
     width: 100%;
-    height: 100vh;
+    height: 100vh !important;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
-
+    padding: 1.5rem 0;
+    gap: 1rem;
+    
     ul{
         height: 100%;
         width: 100%;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -85,12 +100,5 @@
     .menuOn{
         display: flex;
     }
-    
-}
-
-.btnMobileActive{
-    position: absolute;
-    right: 1rem;
-    top: 2rem;
 }
 
