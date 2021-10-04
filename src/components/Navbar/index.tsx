@@ -1,19 +1,21 @@
 import styles from './index.module.scss'
 import { useState } from 'react'
+import useWindowDimensions from '../../Context/useWindowDimensions';
 
 export default function Navbar(){
     
     const [menuActive,setMenuActive] = useState(true);
 
+    const {width} = useWindowDimensions();
     // function toggleMenu(){
         
     // }
 
     return(
-        <div className={styles.container}>
+        <div className={width>660? styles.container:menuActive?styles.containerMobileOff:styles.containerMobileOn}>
             <h1>Mock <strong>S</strong>A</h1>
             <button 
-                className={styles.btnMobile} 
+                className={menuActive? styles.btnMobile:styles.btnMobileActive} 
                 onClick={_=>setMenuActive(!menuActive)}
             >
                 Menu</button>

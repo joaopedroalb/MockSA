@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 function getWindowDimensions() {
   const hasWindow = typeof window !== 'undefined';
 
-  const width = hasWindow ? window.innerWidth : null;
-  const height = hasWindow ? window.innerHeight : null;
+  const width = hasWindow ? window.innerWidth : 0;
+  const height = hasWindow ? window.innerHeight : 0;
   return {
     width,
     height,

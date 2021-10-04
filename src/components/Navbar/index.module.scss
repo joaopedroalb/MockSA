@@ -1,4 +1,4 @@
-.container{
+.container, .containerMobileOff{
     width: 100%;
     height: 5rem;
     align-items: center;
@@ -9,11 +9,22 @@
         width: 80%;
         display: flex;
         justify-content: space-around;
-        list-style: none;
         align-items: center;
+    }
+}
 
+.container, .containerMobileOn,.containerMobileOff{
+    background-color: #0e0e0e4d;
+    display: flex;
+    ul{
+        list-style: none;
         li{
             cursor: pointer;
+        }
+    }
+    h1{
+        strong{
+            color: #2196f3;
         }
     }
 
@@ -39,35 +50,47 @@
     .btnMobile{
         display: none;
     }
-
-    @media only screen and (max-width: 660px) {
-        .btnMobile{
-            display: block;
-        }
-        .menuOff{
-            display: none;
-        }
-        .menuOn{
-            display: flex;
-        }
-    }
 }
 
-.container, .containerMobile{
-    background-color: #0e0e0e4d;
-    display: flex;
-
-    h1{
-        strong{
-            color: #2196f3;
-        }
+.containerMobileOff{
+    .btnMobile{
+        display: block;
+    }
+    .menuOff,.menuOn{
+        display: none;
     }
 }
-
-.containerMobile{
+.containerMobileOn{
     position:absolute;
     width: 100%;
     height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
 
+    ul{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btnMobile{
+        display: block;
+    }
+    .menuOff{
+        display: flex;
+    }
+    .menuOn{
+        display: flex;
+    }
+    
+}
+
+.btnMobileActive{
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
 }
 
