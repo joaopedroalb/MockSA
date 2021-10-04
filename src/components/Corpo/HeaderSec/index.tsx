@@ -14,8 +14,8 @@ export default function HeaderSec(){
                     to new startups. Our SDKs power hundreds of applications
                 </span>
             </div>
-            <Image src={hologram} alt="Hologram"
-                    width={300} height={300}/>
+            <br/>
+            <Image src={hologram} alt="Hologram" width={300} height={300}/>
         </section>
     )
 }

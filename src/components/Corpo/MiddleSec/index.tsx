@@ -7,6 +7,7 @@ export default function MiddleSec(){
     return(
         <section className={styles.container}>
             <Image src={democraticeDesign} alt="Design in work" width={300} height={300}/>
+            <br/>
             <div className={styles.textContainer}>
                 <h1>DEMOCRATIZE DESIGN</h1>
                 <br/>
@@ -16,6 +17,11 @@ export default function MiddleSec(){
                     build applications that bring the world never befone 
                     seen content.
                 </span>
+                <br/><br/>
+                <div className={styles.btnContainer}>
+                    <button>Design for everyone </button>
+                    <button>UBQ Engine</button>
+                </div>
             </div>
         </section>
     )

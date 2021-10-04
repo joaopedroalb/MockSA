@@ -14,7 +14,9 @@ const Home: NextPage = () => {
       <Navbar menuActive={active} setMenuActive={setActive}/>
       {!active ? (
         <>
+          <br/><br/>
           <HeaderSec/>
+          <br/><br/>
           <MiddleSec/>
         </>
       ):<></>}
