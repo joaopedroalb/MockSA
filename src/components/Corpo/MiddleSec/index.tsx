@@ -6,7 +6,7 @@ import democraticeDesign from '../../../../public/democratice-design.svg'
 export default function MiddleSec(){
     return(
         <section className={styles.container}>
-            <Image src={democraticeDesign} alt="Design in work" width={300} height={300}/>
+            <Image src={democraticeDesign} alt="Design in work" width={350} height={350}/>
             <br/>
             <div className={styles.textContainer}>
                 <h1>DEMOCRATIZE DESIGN</h1>

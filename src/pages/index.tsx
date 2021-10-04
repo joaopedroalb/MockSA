@@ -6,6 +6,7 @@ import styles from '../../styles/Home.module.scss'
 import Navbar from '../components/Navbar'
 import HeaderSec from '../components/Corpo/HeaderSec'
 import MiddleSec from '../components/Corpo/MiddleSec'
+import BottomSec from '../components/Corpo/BottomSec'
 
 const Home: NextPage = () => {
   const [active, setActive] = useState(false);
@@ -18,6 +19,8 @@ const Home: NextPage = () => {
           <HeaderSec/>
           <br/><br/>
           <MiddleSec/>
+          <br/><br/>
+          <BottomSec/>
         </>
       ):<></>}
       
