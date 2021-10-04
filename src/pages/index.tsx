@@ -10,7 +10,10 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Navbar menuActive={active} setMenuActive={setActive}/>
       {!active ? (
-        <HeaderSec/>
+        <>
+          <br/>
+          <HeaderSec/>
+        </>
       ):<></>}
       
     </div>

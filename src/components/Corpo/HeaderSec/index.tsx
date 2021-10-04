@@ -8,13 +8,14 @@ export default function HeaderSec(){
         <section className={styles.container}>
             <div className={styles.textContainer}>
                 <h1>BRIDGING TECHNOLOGY & DESIGN</h1>
+                <br/>
                 <span>Mock SA is build the creative engine that brings beatiful video 
                     and photo editing to your applications. From fortune 100 businesses 
                     to new startups. Our SDKs power hundreds of applications
                 </span>
             </div>
             <Image src={hologram} alt="Hologram"
-                    width={200} height={200}/>
+                    width={300} height={300}/>
         </section>
     )
 }
