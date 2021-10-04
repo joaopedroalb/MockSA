@@ -1,8 +1,11 @@
 import type { NextPage } from 'next'
-import styles from '../../styles/Home.module.scss'
-import HeaderSec from '../components/Corpo/HeaderSec'
-import Navbar from '../components/Navbar'
 import { useState } from 'react'
+
+import styles from '../../styles/Home.module.scss'
+
+import Navbar from '../components/Navbar'
+import HeaderSec from '../components/Corpo/HeaderSec'
+import MiddleSec from '../components/Corpo/MiddleSec'
 
 const Home: NextPage = () => {
   const [active, setActive] = useState(false);
@@ -13,6 +16,8 @@ const Home: NextPage = () => {
         <>
           <br/>
           <HeaderSec/>
+          <br/>
+          <MiddleSec/>
         </>
       ):<></>}
       
