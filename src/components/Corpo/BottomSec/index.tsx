@@ -8,7 +8,7 @@ export default function BottomSec(){
         <section className={styles.container}>
             <div className={styles.textContainer}>
 
-                <div>
+                <div className={styles.titleContent}>
                     <h1>Giving Back</h1>
                     <span>As tech and design enthusiasts. 
                         gamers, and creators, we benefit from 
