@@ -7,23 +7,20 @@ import Navbar from '../components/Navbar'
 import HeaderSec from '../components/Corpo/HeaderSec'
 import MiddleSec from '../components/Corpo/MiddleSec'
 import BottomSec from '../components/Corpo/BottomSec'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   const [active, setActive] = useState(false);
   return (
     <div className={styles.container}>
       <Navbar menuActive={active} setMenuActive={setActive}/>
-      {!active ? (
-        <>
-          <br/><br/>
+      <div className={active?styles.containerSecOff:styles.containerSec}>
           <HeaderSec/>
-          <br/><br/>
           <MiddleSec/>
-          <br/><br/>
           <BottomSec/>
-        </>
-      ):<></>}
-      
+          
+      </div>
+      { !active?<Footer/>:<></>}
     </div>
   )
 }
