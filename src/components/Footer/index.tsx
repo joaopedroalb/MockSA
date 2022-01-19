@@ -6,7 +6,7 @@ export default function Footer(){
     return(
         
         <section className={styles.container}>
-            <a href={"https://github.com/joaopedroalb"}>Feito com amor por João Pedro Albuquerque 💗</a>
+            <a href={"https://github.com/joaopedroalb/MockSA"}>Feito com amor por João Pedro Albuquerque 💗</a>
         </section>
     )
 }
